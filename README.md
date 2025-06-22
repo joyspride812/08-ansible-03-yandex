@@ -32,12 +32,11 @@ Netology 08-ansible-03-yandex Moiseenko A.N.
 
 
   Playbook site.yml содержит 4 play'я task'ов которые устанавливают Clickhouse, Vector, Nginx и Lighthouse на хосты clickhouse-01, vector-01, lighthouse-01. Имена хостов и данные для аутентификации указаны в файле inventory/prod.yml   . Каждый play можно выполнить отдельно, используя тэги: Install Clickhouse, Install Vector,Install Nginx и Install LightHouse.  
-  
   Плейбук использует 3 файла с переменными:  
   
 
   ./group_vars/clickhouse/vars.yml  
-  ./group_vars/vector/vars.yml  
+  ./group_vars/vector/vars.yml 
   ./group_vars/vector/secret.yml 
   
 Файл secret.yml добавлен в .gitignore и содержит зашифрованную переменную clickhouse_pass  
