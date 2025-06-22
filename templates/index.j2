@@ -1,0 +1,32 @@
+---
+sources:
+  sample_file:
+    type: file
+    ignore_older_secs: 600
+    include:
+      - /home/ubuntu/test.txt
+    read_from: beginning
+
+sinks:
+  to_clickhouse:
+    type: clickhouse
+    inputs:
+      - sample_file
+    endpoint: {{ clickhouse_host }}
+    database: {{ clickhouse_database }}
+    table: {{ clickhouse_table }}
+    skip_unknown_fields: true
+    compression: gzip
+    acknowledgements:
+      enabled: false
+    healthcheck:
+      enabled: false
+    auth:
+      password: "{{ clickhouse_pass }}"
+      user: "{{ clickhouse_user }}"
+
+
+
+
+
+

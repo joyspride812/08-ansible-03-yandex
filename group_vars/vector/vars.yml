@@ -1,0 +1,6 @@
+---
+  clickhouse_database: "sample"
+  clickhouse_table: "log"
+  clickhouse_user: "db_user"
+  clickhouse_host: "http://10.0.1.33:8123"
+
