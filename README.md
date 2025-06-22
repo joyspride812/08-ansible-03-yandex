@@ -24,7 +24,7 @@ Netology 08-ansible-03-yandex Moiseenko A.N.
 
 Решение.  
 
-  
+  Ссылка на репозиторий: https://github.com/joyspride812/08-ansible-03-yandex.git
 
 
 
